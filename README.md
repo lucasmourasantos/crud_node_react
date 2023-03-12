@@ -1,5 +1,37 @@
 # crud_node_react
 
+# Criar Front End
+npx create-react-app .
+
+# Criar Back End
+- npm init
+- index.js
+- npm install express body-parser mysql
+- npm install nodemon
+- npm install cors
+- npm install axios
+
+  -> #package.json
+      - "scripts":
+        "start": "node index.js",
+        "devStart": "nodemon index.js",
+
+- Criar DB
+CREATE TABLE `employeesystem`.`employees` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(100) NOT NULL,
+  `age` INT(3) NOT NULL,
+  `country` VARCHAR(45) NOT NULL,
+  `position` VARCHAR(100) NOT NULL,
+  `wage` VARCHAR(100) NOT NULL,
+  PRIMARY KEY (`id`));
+
+- INSERT INTO `employeesystem`.`employees` (`name`, `age`, `country`, `position`, `wage`) VALUES ('Lucas', '31', 'Brasil', 'Fired', '5000');
+
+
+
+
+-------------------------------------------------------------------------------------------------------------------------
 Getting Started with Create React App
 This project was bootstrapped with Create React App.
 
